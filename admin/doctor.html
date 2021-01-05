@@ -44,16 +44,16 @@
                                 <a class="nav-link active mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="#">Admin</a>
+                                <a class="nav-link mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="admin.html">admin</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="#doctor" >doctor</a>
+                                <a class="nav-link mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="#" >doctor</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-lg-0 mb-md-3 mb-sm-3 mb-3" href="#patient">patient</a>
+                                <a class="nav-link mb-lg-0 mb-md-3 mb-sm-3 mb-3" href="user.html">users</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-lg-0 mb-md-3 mb-sm-3 mb-3" href="../doctor.html">book now</a>
+                                <a class="nav-link mb-lg-0 mb-md-3 mb-sm-3 mb-3" href="books.html">book now</a>
                             </li>
                             
                         </ul>
@@ -64,23 +64,31 @@
 
 			<!-- Page Content  -->
 	<div id="content" class="p-4 p-md-5">
-		<h2>users</h2> 
+		<h2>doctor</h2> 
      
     <div class="container">
 	<form class="name1 pb-5" id="doctor" >
-		<label >name</label>
-		<input type="text">
+		<label >name</label >
+		<input type="text" required autocomplete="off">
 		<label>email</label>
-        <input type="email" required autocomplete="off">
-        <label>role</label>
+        <input type="email" required >
+        <label>phone</label>
+        <input type="number" required autocomplete="off">
+        <label>birth date</label>
+        <input type="date" required >
+        <label>depart</label>
         <select>
-            <option value="0">pathient</option>
-            <option value="1">doctore</option>
+            <option value="0">child</option>
+            <option value="1">men</option>
+            <option value="2">woman</option>
+
         </select>
         <label>password</label>
         <input type="password" required >
+        <label>confirm password</label>
+        <input type="password" required >
     
-		<input type="submit" value="update">
+		<input type="submit" value="submit">
 	</form>
 	<table class="table table-dark table-hover">
 		
@@ -89,9 +97,10 @@
 		  <th>number</th>
 		  <th>name </th>
           <th> email</th>
-          <th> role</th>
-          <th>password</th>
-		  <th>add</th>
+          <th> phone</th>
+          <th> birth</th>
+          <th> depart</th>
+		  <th>edit</th>
 		  <th>delete</th>
 
 		</tr>
@@ -101,49 +110,58 @@
 		  <td>1</td>
 		  <td>ahmed</td>
           <td>islamic01227393889@gmail.com</td>
-          <td><select>
-              <option value="0">pathient</option>
-              <option value="1">doctore</option>
-          </select></td>
-          <td>852468542</td>
+          <td>01276547898</td>
+          <td>29/5/2001</td>
+        
+        <td>
+             ########
+        </td>
+         
 		  <td><button class="bg-primary p-1 " value="edit">edit</button></td>
 		  <td><button class="bg-danger pl-2" value="remove">remove</button></td>
 		</tr>
 		<tr>
-			<td>2</td>
+            <td>1</td>
             <td>ahmed</td>
             <td>islamic01227393889@gmail.com</td>
-            <td><select>
-                <option value="0">pathient</option>
-                <option value="1">doctore</option>
-            </select></td>
-            <td>852468542</td>
+            <td>01276547898</td>
+            <td>29/5/2001</td>
+          
+          <td>
+            ########
+        </td>
+           
             <td><button class="bg-primary p-1 " value="edit">edit</button></td>
             <td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		<tr>
-			<td>3</td>
+          </tr>
+          <tr>
+            <td>1</td>
             <td>ahmed</td>
             <td>islamic01227393889@gmail.com</td>
-            <td><select>
-                <option value="0">pathient</option>
-                <option value="1">doctore</option>
-            </select></td>
-            <td>852468542</td>
+            <td>01276547898</td>
+            <td>29/5/2001</td>
+            <td>
+                ########
+            </td>
+               
+           
             <td><button class="bg-primary p-1 " value="edit">edit</button></td>
             <td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		</tr>
-		<tr>
-			<td>4</td>
+          </tr>
+          <tr>
+            <td>1</td>
             <td>ahmed</td>
             <td>islamic01227393889@gmail.com</td>
-            <td><select>
-                <option value="0">pathient</option>
-                <option value="1">doctore</option>
-            </select></td>
-            <td>852468542</td>
+            <td>01276547898</td>
+            <td>29/5/2001</td>
+            <td>
+                ########
+            </td>
+               
+          
             <td><button class="bg-primary p-1 " value="edit">edit</button></td>
             <td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		</tr>
+          </tr>
 	  </tbody>
 	  
 	</table>

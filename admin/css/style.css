@@ -181,6 +181,8 @@ section.footer .intro ul li{
 .name1 input[type="text"],
 .name1 input[type="email"],
 .name1 input[type="password"] ,
+.name1 input[type="number"] ,
+.name1 input[type="date"] ,
 .name1 select{
     width: 100%;
     padding: 10PX;

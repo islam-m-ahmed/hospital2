@@ -44,16 +44,16 @@
                                 <a class="nav-link active mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="#doctor">doctor</a>
+                                <a class="nav-link mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="#">admin</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="#patient" >patient</a>
+                                <a class="nav-link mb-lg-0 mb-md-1 mb-sm-1 mb-1" href="doctor.html" >doctor</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mb-lg-0 mb-md-3 mb-sm-3 mb-3" href="user.html">users</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-lg-0 mb-md-3 mb-sm-3 mb-3" href="../doctor.html">book now</a>
+                                <a class="nav-link mb-lg-0 mb-md-3 mb-sm-3 mb-3" href="books.html">book now</a>
                             </li>
                             
                         </ul>
@@ -64,14 +64,23 @@
 
 			<!-- Page Content  -->
 	<div id="content" class="p-4 p-md-5">
-		<h2>about doctor</h2> 
+		<h2>admin</h2> 
      
     <div class="container">
 	<form class="name1 pb-5" id="doctor" >
-		<label >name</label>
-		<input type="text">
-		<label>depart of</label>
-		<input type="text" >
+		<label >name</label >
+		<input type="text" required autocomplete="off">
+		<label>email</label>
+        <input type="email" required >
+        <label>phone</label>
+        <input type="number" required autocomplete="off">
+        <label>birth date</label>
+        <input type="date" required >
+        <label>password</label>
+        <input type="password" required >
+		  <label>confirm password</label>
+        <input type="password" required >
+    
 		<input type="submit" value="submit">
 	</form>
 	<table class="table table-dark table-hover">
@@ -79,8 +88,10 @@
 	  <thead>
 		<tr>
 		  <th>number</th>
-		  <th>doctor </th>
-		  <th> depart of</th>
+		  <th>name </th>
+          <th> email</th>
+          <th> phone</th>
+          <th> birth</th>
 		  <th>edit</th>
 		  <th>delete</th>
 
@@ -89,86 +100,45 @@
 	  <tbody>
 		<tr>
 		  <td>1</td>
-		  <td>dr.ahmed</td>
-		  <td>childerns</td>
+		  <td>ahmed</td>
+          <td>islamic01227393889@gmail.com</td>
+          <td>01276547898</td>
+          <td>29/5/2001</td>
 		  <td><button class="bg-primary p-1 " value="edit">edit</button></td>
 		  <td><button class="bg-danger pl-2" value="remove">remove</button></td>
 		</tr>
 		<tr>
-			<td>2</td>
-		  <td>dr.amer</td>
-		  <td>womans</td>
-		  <td><button class="bg-primary p-1 " value="add">edit</button></td>
-		  <td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		<tr>
-			<td>3</td>
-			<td>dr.mohamed</td>
-			<td>mens</td>
-			<td><button class="bg-primary p-1 " value="add">edit</button></td>
-			<td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>dr.youssef</td>
-			<td>woman</td>
-			<td><button class="bg-primary p-1 " value="add">edit</button></td>
-			<td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		</tr>
+            <td>1</td>
+            <td>ahmed</td>
+            <td>islamic01227393889@gmail.com</td>
+            <td>01276547898</td>
+            <td>29/5/2001</td>
+            <td><button class="bg-primary p-1 " value="edit">edit</button></td>
+            <td><button class="bg-danger pl-2" value="remove">remove</button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>ahmed</td>
+            <td>islamic01227393889@gmail.com</td>
+            <td>01276547898</td>
+            <td>29/5/2001</td>
+            <td><button class="bg-primary p-1 " value="edit">edit</button></td>
+            <td><button class="bg-danger pl-2" value="remove">remove</button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>ahmed</td>
+            <td>islamic01227393889@gmail.com</td>
+            <td>01276547898</td>
+            <td>29/5/2001</td>
+            <td><button class="bg-primary p-1 " value="edit">edit</button></td>
+            <td><button class="bg-danger pl-2" value="remove">remove</button></td>
+          </tr>
 	  </tbody>
 	  
 	</table>
-	<h2>about patient</h2>
-     
-    <div class="container">
-	<form class="name1 pb-5" id="patient" >
-		<label >name</label>
-		<input type="text">
-		<label>depart of</label>
-		<input type="text" >
-		<input type="submit" value="submit">
-	</form>
-	<table class="table table-dark table-hover">
-		
-		<thead>
-		  <tr>
-			<th>number</th>
-			<th>patient </th>
-			<th> depart of</th>
-			<th>add</th>
-			<th>delete</th>
-  
-		  </tr>
-		</thead>
-		<tbody>
-		  <tr>
-			<td>1</td>
-			<td>saad</td>
-			<td>childerns</td>
-			<td><button class="bg-primary p-1 " value="add">edit</button></td>
-			<td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		  </tr>
-		  <tr>
-			  <td>2</td>
-			<td>mona</td>
-			<td>womans</td>
-			<td><button class="bg-primary p-1 " value="add">edit</button></td>
-			<td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		  <tr>
-			  <td>3</td>
-			  <td>khaled</td>
-			  <td>mens</td>
-			  <td><button class="bg-primary p-1 " value="add">edit</button></td>
-			  <td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		  </tr>
-		  <tr>
-			  <td>4</td>
-			  <td>yomna</td>
-			  <td>woman</td>
-			  <td><button class="bg-primary p-1 " value="add">edit</button></td>
-		  <td><button class="bg-danger pl-2" value="remove">remove</button></td>
-		  </tr>
-		</tbody>
-	  </table>
+	
+	  
   </div>
 		</div>
 	</div>
