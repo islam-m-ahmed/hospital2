@@ -69,6 +69,8 @@ nav ul li a.active{
 }
 .navbar{
     background-color: #f7f7f7!important;
+    position: relative;
+    z-index: 2;
 }
 @media ( max-width: 1200px){
     ul.navbar-nav{
@@ -929,6 +931,8 @@ section.footer .intro ul li{
 }
 
 /* End Sign-In-Up */
+/* contact */
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;

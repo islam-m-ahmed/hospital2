@@ -25,9 +25,14 @@
     color: rgb(235, 231, 231);
 
 }
+@media ( min-width: 1200px){
+    .top-bar{
+        max-width: 100%;
+    }
+}
 /* nav */
 ul.navbar-nav{
-    margin-left: 28rem;
+    margin-left: 34rem;
 }
 nav ul li{
     display: inline-block;
@@ -41,6 +46,7 @@ nav ul li a{
    color: #000;
    padding-left: 10px;
    font-size: 18px;
+  
 }
 nav ul li a:hover{
     color: blue !important;
@@ -51,8 +57,12 @@ nav ul li a.active{
 .navbar{
     background-color: #f7f7f7!important;
 }
+@media ( max-width: 1200px){
+    ul.navbar-nav{
+        margin-left: 22rem;
+    }
+}
 /* end  */
-
 
 /** admin content **/
 .wrapper {
@@ -168,6 +178,16 @@ section.footer .intro ul li{
 	padding:22px ;
 	font-size: 25px;
 	color: #fff;
+}
+@media(max-width:991px){
+    section.footer .left{
+        display: none;
+    }
+    section.footer .intro ul{
+        left: 2%;
+        bottom: -77px;
+    }
+    
 }
 /* end footer */
 .name1 label{
